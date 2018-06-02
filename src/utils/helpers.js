@@ -297,6 +297,9 @@ let cleanTextAmount = function(n) {
  * @return {String} - An endpoint url
  */
 let formatEndpoint = function(endpoint) {
+    if (endpoint.port === '') {
+        return endpoint.host;
+    }
     return endpoint.host + ':' + endpoint.port;
 }
 
