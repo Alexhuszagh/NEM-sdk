@@ -297,7 +297,6 @@ let cleanTextAmount = function(n) {
  * @return {String} - An endpoint url
  */
 let formatEndpoint = function(endpoint) {
-    console.log(endpoint);
     if (endpoint.port === '') {
         return endpoint.host;
     }
